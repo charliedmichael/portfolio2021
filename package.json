@@ -1,0 +1,33 @@
+{
+  "name": "portfolio2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.6",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "jquery": "^3.6.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "gltf-webpack-loader": "^1.0.6",
+    "gsap": "^3.7.0",
+    "jsdom": "^16.6.0",
+    "smoothscroll-polyfill": "^0.4.4",
+    "splitting": "^1.0.6",
+    "three": "^0.129.0"
+  }
+}
