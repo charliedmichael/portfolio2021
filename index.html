@@ -6,11 +6,10 @@
   <script defer src="bundle.js"></script></head>
   
   <body>
-
-    
     <div id="loadScreen"></div>
 
-    <div id="popupAbout">
+
+    <div id="popupAbout" style="display: none;">
 
       <div id="gallery">
 
@@ -25,11 +24,11 @@
           <p class="lighter">
             I'm Charlie &#9728;
             <br><br>
-            My influences come from a broad range of experiences playing bass in a <a href="https://open.spotify.com/artist/0igM0nQNp2Dzxdxf8czBzA">post punk disco band</a>,
-            producing & mixing <a href="https://soundcloud.com/lekrug">electronic music</a>,
-            and selling <a href="https://www.instagram.com/pagodagoods/">coffee</a> at my neighborhood farmers market.
-            <br><br>
-            Please <a href="mailto:charliedmichael@gmail.com">reach out</a> if you're interested in working together &#9774;
+            My influences come from a broad range of experiences playing bass in a <a href="https://open.spotify.com/artist/0igM0nQNp2Dzxdxf8czBzA"><span class="containerLink">post punk disco band</span></a>,
+            producing & mixing <a href="https://soundcloud.com/charleyangles"><span class="containerLink">electronic music</span></a>,
+            and selling <a href="https://www.instagram.com/pagodagoods/"><span class="containerLink">coffee</span></a> at my neighborhood farmers market.
+            <br>
+            Please <a href="mailto:charliedmichael@gmail.com"><span class="containerLink">reach out</span></a> if you're interested in working together &#9774;
           
           </p>
         </div>
@@ -45,17 +44,19 @@
 
     </div>
 
-    <div id="nav-about" class="nav popTrigger">
+    <div id="nav-about" class="nav popTrigger" style="display:none;">
       <p>about</p>
     </div>
 
-    <a href="https://instagram.com/_m.charlie">
-      <div id="nav-IG" class="nav">
+    <a href="https://instagram.com/charleyangles">
+      <div id="nav-IG" class="nav" style="display:none;">
         
         <p>instagram</p>
         
       </div>
     </a>
+
+    <div>
 
       <div id="popMarquee">
 
@@ -86,10 +87,27 @@
         </div>
         
       </div>
+
+
+        <div class="pageWrapper" id="pageWrapper" style="display:none;">
+
+
+
+          
+          <canvas id="bgCanvas" class="parallax-bg">
+
+
+
+   
+
+     
       
-      <canvas id="bgCanvas" class="parallax-bg">
 
       </canvas>
+
+
+      
+
 
       <div id="gallery" class="parallax-fg">
 
@@ -110,7 +128,7 @@
                 I'm a graphic designer with a unique perspective on culture, generalizing in
                 visual identity systems, illustration, type design, sound design, writing & recording music, 
                 3D design and expressive coding for the web.
-                <a href="mailto:charliedmichael@gmail.com">Reach out</a>
+                <a href="mailto:charliedmichael@gmail.com"><span class="containerLink">Reach out</span></a>
                 so we can work together &#9774;
               </p>
             </div>
@@ -135,7 +153,7 @@
   
               <div>
                 
-                <div class="underline lighter ">
+                <div class="popupSubtitle">
                   <p>
                   ART DIRECTION
                   <br>
@@ -157,7 +175,6 @@
 
             <div id="frame" class="">
 
-              <div class="centerFrame">
                 
                 <img class="" src="27cabca5eddce25288b8.png"> 
                 <img class="" src="392eb5f252afedcab0e5.png"> 
@@ -167,7 +184,7 @@
 
               
               
-              <div class="centerFrame">
+              <div id="frame" class="">
                 <img class="" src="8ecb23eeb6bd6050326c.png"> 
 
 
@@ -180,7 +197,6 @@
                 
               </div> 
 
-            </div>
             
             <div class="popupHeader ">
               
@@ -215,117 +231,120 @@
 
             </div>
 
-            <div id="frame">
 
 
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="30aa0f31486f3bd41a39.mp4" type="video/mp4">
+
+
+
+
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="30aa0f31486f3bd41a39.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="59d709e1e9c977622aa7.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="59d709e1e9c977622aa7.mp4#t=3" type="video/mp4">
                 </video>
 
                 
                 
               </div>   
 
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="2d32cec6496a00612e7b.mp4" type="video/mp4">
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="2d32cec6496a00612e7b.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="76c7397b48a532e01c92.mp4" type="video/mp4">
-                </video>
-                
-              </div>
-
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="b051f1c9ffc2add917fc.mp4" type="video/mp4">
-                </video>
-
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="092d93ab82eb139cb102.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="76c7397b48a532e01c92.mp4#t=3" type="video/mp4">
                 </video>
                 
               </div>
 
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="3257e3a36b1112d56a4d.mp4" type="video/mp4">
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="b051f1c9ffc2add917fc.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="2ba15bf8a12cbe8c641a.mp4" type="video/mp4">
-                </video>
-
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="29cc32dafca8fd8a8d9f.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="092d93ab82eb139cb102.mp4#t=3" type="video/mp4">
                 </video>
                 
               </div>
 
-              <div class="centerFrame">
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="3257e3a36b1112d56a4d.mp4#t=3" type="video/mp4">
+                </video>
+
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="2ba15bf8a12cbe8c641a.mp4#t=3" type="video/mp4">
+                </video>
+
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="29cc32dafca8fd8a8d9f.mp4#t=3" type="video/mp4">
+                </video>
+                
+              </div>
+
+              <div id="frame" class="">
                 <img class="width100" src="4f576356afa3c8eb6a63.png"> 
 
               </div> 
 
-              <div class="centerFrame">
+              <div id="frame" class="">
                 <img class="vidGallery" src="494292301244557b0aee.png"> 
                 <img class="vidGallery" src="de85934ade4b5c6ef18f.png"> 
                 <img class="vidGallery" src="c689a2964cb2198daabf.png"> 
 
               </div> 
 
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="073f8296f0f056af1bfb.mp4" type="video/mp4">
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="073f8296f0f056af1bfb.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="4832251e6b223833d9e0.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="4832251e6b223833d9e0.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="2b2408dcae517b464005.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="2b2408dcae517b464005.mp4#t=3" type="video/mp4">
                 </video>
 
                 
               </div>
 
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="a410b79c2125349943fd.mp4" type="video/mp4">
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="a410b79c2125349943fd.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="6b6934bcbd1c13678bd1.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="6b6934bcbd1c13678bd1.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="148a0d6a8cca517ee14e.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="148a0d6a8cca517ee14e.mp4#t=3" type="video/mp4">
                 </video>
 
                 
               </div>  
 
-              <div class="centerFrame">
+              <div id="frame" class="">
                 <img class="" src="c2f07b60d7de07596837.png"> 
               
 
               </div> 
 
-              <div class="centerFrame">
+              <div id="frame" class="">
                 <img class="" src="71befaecb512f0382b2b.png"> 
                 <img class="" src="70537f31a464873c1d15.png"> 
                 <img class="" src="335e802872d8556accfe.png"> 
 
               </div> 
 
-              <div class="centerFrame">
+              <div id="frame" class="">
                 <img class="" src="5a7812fc45251f516e59.png"> 
                 <img class="" src="ae0203f0d25fa3797a8e.png"> 
                 <img class="" src="dba801813c5344d031e3.png"> 
@@ -333,14 +352,17 @@
 
               </div> 
 
-              <div class="centerFrame">
+              <div id="frame" class="">
                 <img class="" src="5179899ba313180c5488.png"> 
                
                
 
               </div> 
 
-            </div>
+
+
+
+
 
             <div class="popupHeader ">
               
@@ -369,16 +391,14 @@
 
             <div id="frame" class="">
 
-              <div class="centerFrame">                
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="648c5d7066778a5679b4.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="648c5d7066778a5679b4.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="fc32328818e752727852.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="fc32328818e752727852.mp4#t=3" type="video/mp4">
                 </video>
-              </div>
 
               
 
@@ -392,8 +412,8 @@
 
         <div class="popupFrame">
 
-          <video autoplay loop muted class="imgPad">
-            <source src="148a0d6a8cca517ee14e.mp4" type="video/mp4">
+          <video controls loop muted class="imgPad autoVideo">
+            <source src="148a0d6a8cca517ee14e.mp4#t=10" type="video/mp4">
           </video>
 
           <div class="split" data-splitting>COACHELLA-2022-COACHELLA-2022-COACHELLA-2022-</div>
@@ -417,7 +437,7 @@
   
               <div>
                 
-                <div class="underline lighter ">
+                <div class="popupSubtitle">
                   <p>
                   ART DIRECTION
                   <br>
@@ -439,62 +459,70 @@
 
             </div>
 
-            <div id="frame" class="">
-              <div class="centerFrame">
+
+
+
+
+
+
+              <div id="frame" class="">
                 
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="c2da1ecdcb7e9f58cf09.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="c2da1ecdcb7e9f58cf09.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="c72f2f1f7da833680318.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="c72f2f1f7da833680318.mp4#t=3" type="video/mp4">
                 </video>
               </div>
 
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="e0f9e011b2a077fe5b09.mp4" type="video/mp4">
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="e0f9e011b2a077fe5b09.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="0a9e8f57af3489d89918.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="0a9e8f57af3489d89918.mp4#t=3" type="video/mp4">
                 </video>
 
                 
               </div>
 
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery smallVid">
-                  <source src="c8deacf054511ce137ab.mp4" type="video/mp4">
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery smallVid" preload="none">
+                  <source src="c8deacf054511ce137ab.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery smallVid">
-                  <source src="a282d71610efbfd24bda.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery smallVid" preload="none">
+                  <source src="a282d71610efbfd24bda.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery smallVid">
-                  <source src="c5c44453c72602f08131.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery smallVid" preload="none">
+                  <source src="c5c44453c72602f08131.mp4#t=3" type="video/mp4">
                 </video>
                 
-                <video autoplay loop muted class="vidGallery smallVid">
-                  <source src="94fa15f689ce6a29d522.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery smallVid" preload="none">
+                  <source src="94fa15f689ce6a29d522.mp4#t=3" type="video/mp4">
                 </video>
 
               </div>
 
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="12e63f603a05dca6e77e.mp4" type="video/mp4">
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="300d960a084cadc3008e.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="45053d0ba80b7d10aece.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="45053d0ba80b7d10aece.mp4#t=6" type="video/mp4">
                 </video>
 
               </div>
 
-            </div>
+
+
+
+
             
             <div class="popupHeader ">
               
@@ -524,40 +552,40 @@
 
             </div>
 
-            <div id="frame">
 
 
-              <div class="centerFrame">
+
+
+              <div id="frame" class="">
                 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="c7fcfcc0a2fba871fe11.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="c7fcfcc0a2fba871fe11.mp4#t=2" type="video/mp4">
                 </video>
 
               </div>
 
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="0348f8b4175f16b9b2af.mp4" type="video/mp4">
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="0348f8b4175f16b9b2af.mp4#t=1" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="74da84e5e500edcbceb9.mp4" type="video/mp4">
-                </video>
-
-              </div>
-
-              <div class="centerFrame">
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="adb67ccc0406217eb729.mp4" type="video/mp4">
-                </video>
-
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="ad872c570b65e535adba.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="74da84e5e500edcbceb9.mp4#t=1" type="video/mp4">
                 </video>
 
               </div>
 
-            </div>
+              <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="adb67ccc0406217eb729.mp4#t=3" type="video/mp4">
+                </video>
+
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="ad872c570b65e535adba.mp4#t=3" type="video/mp4">
+                </video>
+
+              </div>
+
 
             <div class="popupHeader ">
               
@@ -586,64 +614,66 @@
 
             </div>
 
-            <div id="frame" class="">
 
-              <div class="centerFrame">                
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="9b6299fad799b3a59e1b.mp4" type="video/mp4">
+
+
+
+              <div id="frame" class="">                
+
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="9b6299fad799b3a59e1b.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="c2adf2478dcb4025d361.mp4" type="video/mp4">
-                </video>
-              </div>
-
-              <div class="centerFrame">
-                
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="f256e6370108d74cf990.mp4" type="video/mp4">
-                </video>
-
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="5e815e37ce18bc6a6678.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="c2adf2478dcb4025d361.mp4#t=3" type="video/mp4">
                 </video>
               </div>
 
-              <div class="centerFrame">
+              <div id="frame" class="">
                 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="b199decbbdfb8400ce44.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="6d706191fc0eae5a2a63.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="19dcd24e02ea7257cef1.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="5e815e37ce18bc6a6678.mp4#t=3" type="video/mp4">
+                </video>
+              </div>
+
+              <div id="frame" class="">
+                
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="b199decbbdfb8400ce44.mp4#t=3" type="video/mp4">
+                </video>
+
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="19dcd24e02ea7257cef1.mp4#t=3" type="video/mp4">
                 </video>
               </div>  
               
-              <div class="centerFrame">
+              <div id="frame" class="">
                 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="af93d14df9a2925ad2c3.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="af93d14df9a2925ad2c3.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="8970d26a9522c72745b2.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="8970d26a9522c72745b2.mp4#t=3" type="video/mp4">
                 </video>
               </div>  
 
-              <div class="centerFrame">
+              <div id="frame" class="">
                 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="c33165e57f979e49bec4.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="c33165e57f979e49bec4.mp4#t=3" type="video/mp4">
                 </video>
 
-                <video autoplay loop muted class="vidGallery ">
-                  <source src="330ec523da96637a5dc3.mp4" type="video/mp4">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="330ec523da96637a5dc3.mp4#t=3" type="video/mp4">
                 </video>
               </div>  
 
-            </div>
 
             
 
@@ -653,8 +683,8 @@
 
         <div class="popupFrame">
 
-          <video autoplay loop muted class="imgPad">
-            <source src="74da84e5e500edcbceb9.mp4" type="video/mp4">
+          <video controls loop muted class="imgPad autoVideo" preload="none">
+            <source src="74da84e5e500edcbceb9.mp4#t=1" type="video/mp4">
           </video>
 
           <div class="split" data-splitting>YOU-TUBE-MUSIC-YOU-TUBE-MUSIC-YOU-TUBE-MUSIC-</div>
@@ -664,7 +694,6 @@
         </div>
  
       
-
         <div id="popup" class="">
 
           <div class="popPadding ">
@@ -674,27 +703,29 @@
               
               <div class="justifyLeft bold ">
                 <p>
-                CHIEF
+                THE INTERMET
                 </p>
               </div>
   
               <div>
                 
-                <div class="underline lighter ">
+                <div class="popupSubtitle ">
                   <p>
-                  VISUAL IDENTITY PROPOSAL
+                  THE MET ON THE INTERNET
+                  <br>
+                  CODED WITH REACT JS, THREE JS/R3F
                   </p>
+                  
                 </div>
                 
                 <p class="lighter ">
-                  Chief is a women’s networking club open only to C-level executives. For this identity revision proposal, 
-                  I studied their current website and photos of their interior to try and glean what their taste and values are, so that I would be able to anticipate 
-                  how they would like to represent themselves through a visual identity. 
-                  I believe the job of a graphic designer
-                  when creating an identity is to interpret their story so that we can give them something
-                  they love that they wouldn't have been able to articulate on their own.
-                  
-                  The word ‘power’ is invoked several times on their site, and in interviews with the owners, as well as ‘exclusivity’.
+                  I built a website that accesses the Met's <a href="https://www.metmuseum.org/about-the-met/policies-and-documents/open-access"><span class="containerLink">Open Access</span></a> collection of art and displays it in a 3D space.
+                  You can search the database by name, country or culture, and it will display all the items the Met has tagged with those terms.
+                  It's a way to discover new art, and it's fun to fly around the space looking around.
+                </p>
+                <br>
+                <p>
+                  <a href="https://theintermet.net"><span class="containerLink"></span>VISIT IT LIVE</a>
                 </p>
             
               </div>
@@ -703,226 +734,33 @@
             </div>
 
             <div id="frame" class="">
-              <img class="width100" src="9e95e900c9a1d302f8d8.png">
+                
+
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="1563f488ffd5c78d57e7.mp4" type="video/mp4">
+                </video>
+
+             </div>
+
+            <div id="frame" class="">
+                <video controls loop muted class="vidGallery" preload="none">
+                  <source src="f0cd9bb678d388a23f1b.mp4" type="video/mp4">
+                </video>
+                
             </div>
 
-            <div class="popupHeader ">
               
-              <span class=" bold ">
-                <p class="">
-                  <br>
-                RESEARCH&nbsp;
-                </p>
-              </span>
 
-              <span >
-                
-                <!-- <div class="underline lighter ">
-                  <p>
-                    <br>
-                  MICA GD&#8212;MFA THESIS
-                  </p>
-                </div> -->
-                
-                <p class="lighter ">
-                  <br>
-                  The brand has already started to orient itself aesthetically through its choices for interior design. Each of the photos of its interior space features tropical plants such as broad leaf fig. The furniture has a ‘Restoration Hardware’ vibe. This demonstrates a cultural awareness and a desire to present themselves in a sophisticated and culturally relevant way.                </p>
-
-                <br>
-                <br>
             
-              </span>
+           
 
-            </div>
             
-            <div id="frame" class="">
-              <img class="width100" src="4ef71a570964ea6a0921.png">
-            </div>
 
-            <div class="popupHeader ">
-              
-              <span class=" bold ">
-                <p class="">
-                  <br>
-                COMPARABLES&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <!-- <div class="underline lighter ">
-                  <p>
-                    <br>
-                  MICA GD&#8212;MFA THESIS
-                  </p>
-                </div> -->
-                
-                <p class="lighter ">
-                  <br>
-                  Soho House is a social club for creatives, providing boutique dining and luxury hospitality experiences in cities around the world. The brand relies heavily on typography and photography, the logo is rarely used. Small bits of character in the sans serif chosen do most of the work in expressing the identity.
-                <br>
-                <br>
             
-              </span>
 
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="96fc38d0037b54373b57.png">
-            </div>
-
-            <div class="popupHeader ">
-              
-              <span class=" bold ">
-                <p class="">
-                  <br>
-                COMPARABLES&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <!-- <div class="underline lighter ">
-                  <p>
-                    <br>
-                  MICA GD&#8212;MFA THESIS
-                  </p>
-                </div> -->
-                
-                <p class="lighter ">
-                  <br>
-                  The Wing is a co-working space for women. It offers career development programs, as well as luxurious amentities. Unlike Chief, however, the brand strives to be inclusive, especially after receiving criticism for not providing enough access to lower income women. The logo is curvy and fun, keeping its aesthetic form being too ‘professional’.                <br>
-                <br>
             
-              </span>
 
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="7d3c02eb06d0d7df7c9f.png">
-            </div>
-
-            <div class="popupHeader ">
-              
-              <span class=" bold ">
-                <p class="">
-                  <br>
-                COMPARABLES&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <!-- <div class="underline lighter ">
-                  <p>
-                    <br>
-                  MICA GD&#8212;MFA THESIS
-                  </p>
-                </div> -->
-                
-                <p class="lighter ">
-                  <br>
-                  Spring Place is a coworking space for creatives, with boutique and luxurious amenities. Price reductions are offered as incentive for younger members. The brand shares Chief’s taste for tropical plants, and its visual identity connotes cultural relevancy through a simple and elegant application of type.                <br>
             
-              </span>
-
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="1bbd62b3dfa41e409425.png">
-            </div>
-
-            <div class="popupHeader ">
-              
-              <span class=" bold ">
-                <p class="">
-                  <br>
-                VISUAL IDENTITY PROPOSAL&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <!-- <div class="underline lighter ">
-                  <p>
-                    <br>
-                  MICA GD&#8212;MFA THESIS
-                  </p>
-                </div> -->
-                
-                <p class="lighter ">
-                  <br>
-                  I based the concept for my proposal on <span class="bold">simply a feeling</span> of sophistication, luxury, and exclusivity, expressed through type and a limited color palette. The value of being a member is access to a professional network—for this reason I used dots as a subtle way to connote the feeling of a directory. For the smaller logo, I straightened the top of the “container” to distinguish it from a copyright symbol.            
-              </span>
-
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="bf80c2d7076347dcaae3.png">
-            </div>
-
-            <div class="popupHeader ">
-              
-              <span class=" bold ">
-                <p class="">
-                  <br>
-                POWER + CULTURAL RELEVANCE&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <!-- <div class="underline lighter ">
-                  <p>
-                    <br>
-                  MICA GD&#8212;MFA THESIS
-                  </p>
-                </div> -->
-                
-                <p class="lighter ">
-                  <br>
-                  Based on an actual event held at Chief featuring Jennifer Lawrence, I imagined how a series of events at Chief might look as a system for promotion, balancing subtle typography with a connotation of exclusivity, power and cultural relevance.              </span>
-
-            </div>
-            
-            <div id="frame" class="">
-              <img class="width100" src="293e4bdc38509fdcf4cf.png">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="451c164808060cbc6b76.png">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="78893d41124f8aad0ba3.png">
-            </div>
-
-            <div class="popupHeader ">
-              
-              <span class=" bold ">
-                <p class="">
-                  <br>
-                SOCIAL MEDIA&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <!-- <div class="underline lighter ">
-                  <p>
-                    <br>
-                  MICA GD&#8212;MFA THESIS
-                  </p>
-                </div> -->
-                
-                <p class="lighter ">
-                  <br>
-                  I took the opportunity with social media to expand the color palette, adding small pops of color set against the main minimal motif. I imagined these subtle constrasts could be used to define a special series of lifestyle events, that Chief could introduce as a way for executives to bond outside of a strictly professional context.
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="fd5ccb35eb1c8538a2c2.png">
-            </div>
 
           </div>
           
@@ -930,238 +768,16 @@
 
         <div class="popupFrame">
 
-          <img class="imgPad width100" src="f7b4616a5c488f34becb.png">
+          <video controls loop muted class="imgPad autoVideo">
+            <source src="ef0940bae53560542457.mp4" type="video/mp4">
+          </video>
 
-          <div class="split" data-splitting>CHIEF-CHIEF-CHIEF-CHIEF-CHIEF-CHIEF-CHIEF-CHIEF-</div>
+          <div class="split" data-splitting>THE-INTERMET-&#9788;-THE-INTERMET-&#9788;-THE-INTERMET-&#9788;-</div>
 
-
-
-        </div>
-
-        
-
-        
-          
-        <div id="popup" class="">
-
-          <div class="popPadding ">
-
-              
-              <div class="popupHeader ">
-                
-                <div class="justifyLeft bold ">
-                  <p class="">
-                  BAM NEXT WAVE
-                  </p>
-                </div>
-
-               
-                
-                <div>
-                  
-                  <div class="underline lighter ">
-                    <p class="">
-                    MICA GRAD TYPOGRAPHY PROJECT
-                   </p>
-                  </div>
-                  
-                  <p class="lighter ">
-                    Next Wave is an annual performing arts festival at the Brooklyn Academy of Music. Using their event details from 2019,
-                    this program is designed to capture the dichotomous nature of the event, of BAM and more broadly New York City itself, all places that are simultaneously
-                    refined and raw. 
-                  </p>
-              
-                </div>
-
-
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="117bfb47d8fe4e69def4.png">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="4bd5e4b2031ef0547660.png">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="2ecabd5f82d871cbb534.png">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="038b9391c5112a985ee9.png">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="0de9eb3e1aacb23966de.png">
-            </div>
-
-            <div class="popupHeader ">
-              
-              <span class=" bold ">
-                <p class="">
-                  <br>
-                ILLUSTRATION / PUBLICATION DESIGN&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <!-- <div class="underline lighter ">
-                  <p>
-                    <br>
-                  MICA GD&#8212;MFA THESIS
-                  </p>
-                </div> -->
-                
-                <p class="lighter ">
-                  <br>
-                  Collaging photos from each show with loose line illustrations brings a sense of cohesion between individual performances,
-                  as if they are all peforming together on the page, while demonstrating both rigorous minimalism and a playful tone togeher in one voice.              </span>
-
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="8bd27746346f9e183f00.png">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="ab253b3a47c0c94ca536.png">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="8b6b987aa49ee6b74bff.png">
-            </div>
-
-          </div>
-          
-        </div>
-
-        <div class="popupFrame">
-
-
-          <img class="imgPad width100" src="117bfb47d8fe4e69def4.png">
-
-          <div class="split" data-splitting>BAM-BAM-BAM-BAM-BAM-BAM-BAM-BAM-BAM-BAM-BAM-BAM-</div>
 
 
         </div>
 
-        <div id="popup" class="">
-
-          <div class="popPadding ">
-
-              
-              <div class="popupHeader ">
-                
-                <div class="justifyLeft bold ">
-                  <p class="">
-                  PAGODA GOODS LOOKBOOK
-                  </p>
-                </div>
-
-               
-                
-                <div>
-                  
-                  <div class="underline lighter ">
-                    <p class="">
-                    FASHION EDITORIAL
-                   </p>
-                  </div>
-                  
-                  <p class="lighter ">
-                    Pagoda Goods is a capsule collection featuring an original garment I designed, based on
-                    Japanese workcoat patterns sourced from the Kappabashi neighborhood of Tokyo, and US Army Jackets.
-                    The concept is to pay homage to my Grandfather who fought in WWII in the Pacific, but also spent time
-                    post war in Japan and fell in love with the people there. This piece, as well as the photography and typography,
-                    tell the story of the connections that were made in that historical moment and how they have influenced me.
-                    <br><br>
-                  </p>
-              
-                </div>
-
-
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="69fa5b7e42df330d869a.jpg">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="18cfa2c8ec4c29e4057d.jpg">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="36a0b07fcaaac656e27f.jpg">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="c973ca053ada973ef4d6.jpg">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="39ae0812ce5ee7d2ec77.jpg">
-            </div>
-
-            <div class="popupHeader ">
-              
-              <span class=" bold ">
-                <p class="">
-                  <br>
-                ILLUSTRATION / PUBLICATION DESIGN&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <!-- <div class="underline lighter ">
-                  <p>
-                    <br>
-                  MICA GD&#8212;MFA THESIS
-                  </p>
-                </div> -->
-                
-                <p class="lighter ">
-                  <br>
-                  I was lucky enough to have copies of photographs my Grandfather took while in Japan, which I used in combination with film photos 
-                  I took to document the process of making the jackets, as well as to shoot the models.        
-                  <br><br>
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="c6086e73c264a695a9b6.jpg">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="effd36a94021dca05f16.jpg">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="f969ffb0bbfea1e3d71f.jpg">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="7287b99bbaec74aaf31d.jpg">
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="20d53430e56981272021.jpg">
-            </div>
-
-          </div>
-          
-        </div>
-
-        <div class="popupFrame">
-
-
-          <img class="imgPad width100" src="69fa5b7e42df330d869a.jpg">
-
-          <div class="split" data-splitting>PAGODA-GOODS-LOOK-BOOK-PAGODA-GOODS-LOOK-BOOK-</div>
-
-
-        </div>
 
         <div id="popup" class="">
 
@@ -1178,7 +794,7 @@
 
               <span >
                 
-                <div class="underline lighter ">
+                <div class="popupSubtitle">
                   <p>
                   MICA GD&#8212;MFA THESIS
                   </p>
@@ -1475,214 +1091,17 @@
         
         </div>
 
-        <div id="popup" class="">
-
-          <div class="popPadding " >
-
-
-            <div class="popupHeader ">
-
-              <span class=" bold ">
-                <p class="">
-                JUNGLE JOOSE&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <div class="underline lighter ">
-                  <p>
-                  IMAGINARY DRINK
-                  </p>
-                </div>
-                
-                <p class="lighter ">
-                  Jungle Joose is an NFT I designed capturing the tone of UK rave culture,
-                  specifically the jungle scene of the early 90s.
-                </p>
-            
-              </span>
-
-
-            </div>
-
-            <div id="frame" class="">
-              <div class ="centerElement">
-                <video loop muted autoplay>
-                  <source src="b9a67a496739a509f3e9.mp4" type="video/mp4">
-                </video>  
-               </div>            
-            </div>
-            
-          </div>
-          
-        </div>
-
-        <div id="frame" class="popTrigger">
-          <canvas id="modelCanvasJJ" class="shadowed"></canvas>
-        </div>
-
-        <div id="popup" class="">
-
-          <div class="popPadding " >
-
-
-            <div class="popupHeader ">
-
-              <span class=" bold ">
-                <p class="">
-                SLURP&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <div class="underline lighter ">
-                  <p>
-                  IMAGINARY SODA
-                  </p>
-                </div>
-                
-                <p class="lighter ">
-                  What does GLORP drink? SLURP. An imaginary soda enjoyed by astral travelers, 
-                  that serves as a type specimen for Sorcery, a font I designed.
-                </p>
-            
-              </span>
-
-
-            </div>
-
-            <div id="frame" class="">
-              <img class="width100" src="986882360da51f4ca1a7.png">
-            </div>
-            
-          </div>
-          
-        </div>
-
-        <div id="frame" class="popTrigger">
-          <canvas id="modelCanvas" class="shadowed"></canvas>
-        </div>
+        
 
         
         
         <div id="frame">
-          <video controls loop muted>
+          <video controls loop muted class="autoVideo">
             <source src="f5abb375ecf016314567.mp4#t=16" type="video/mp4">
           </video>
         </div>
 
-        <div id="popup" class="">
-
-          <div class="popPadding " >
-
-
-            <div class="popupHeader ">
-
-              <span class=" bold ">
-                <p class="">
-                BICICLETA&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <div class="underline lighter ">
-                  <p>
-                  TYPE DESIGN
-                  </p>
-                </div>
-                
-                <p class="lighter ">
-                  Bicicleta is a typeface I designed based on a presumably hand drawn phrase 
-                  “hop dedik” from the cover of an album by Turkish singer Erol Büyükburç. 
-                  Hop dedik means “cool it”. While figuring out the constructions for the rest 
-                  of the alphabet, I was listening to a song by Brazilian musician Marcos Valle 
-                  called Bicicleta, and was really just in love with it. It even has a music 
-                  video, that I highly recommend (apart from the one that I made, subsequently). 
-                  For some reason this song seemed to match the character of these letters—
-                  there was something about my environment being full of delightful Turkish and
-                  Portugese words making me feel like I was in a language immersion, traveling 
-                  abroad and reading awesome signs in a language I don’t understand. So that 
-                  became the direction, and my passion for vintage cycles, with all the European 
-                  components, seemed to align itself perfectly.
-                </p>
-            
-              </span>
-
-
-            </div>
-
-            <div id="frame" class="popTrigger">
-              <img class="width100" src="7382f9b76e8a9b2684bf.png">
-            </div>
-
-            <div id="frame" class="popTrigger">
-              <img class="width100" src="57a5ad1ab03525d01154.png">
-            </div>
-
-            <div id="frame" class="popTrigger">
-              <img class="width100" src="8d58c1a1d13f2f93cfa6.png">
-            </div>
-            
-          </div>
-          
-        </div>
-
-        <div id="frame" class="offSet popTrigger">
-          <img class="width100" src="7d90f9a5c7d042de3201.png">
-        </div>
-
-        <div id="popup" class="">
-
-          <div class="popPadding " >
-
-
-            <div class="popupHeader ">
-
-              <span class=" bold ">
-                <p class="">
-                XOR BOOKS&nbsp;
-                </p>
-              </span>
-
-              <span >
-                
-                <div class="underline lighter ">
-                  <p>
-                  BOOK SERIES CONCEPT
-                  </p>
-                </div>
-                
-                <p class="lighter ">
-                  XOR books is an imaginary occult book publisher, that serves as a type specimen
-                  for a font I designed called Xanadu. The arcane aesthetic of the books contrast with
-                  a radically mundane neighborhood grocery store. 
-                </p>
-            
-              </span>
-
-
-            </div>
-
-            <div id="frame" class="popTrigger">
-              <img class="width100" src="ac051526c5e89ca4240e.png">
-            </div>
-            
-          </div>
-          
-        </div>
         
-        <div id="frameSDF" class="popTrigger">
-          <canvas id="modelCanvas2" class="shadowed"></canvas>
-        </div>
-
-        <div id="frameLong">
-          <video class="imgPad width100" controls  loop muted>
-            <source src="a7fbb6756cc9b02f12dc.mp4#t=5" type="video/mp4">
-          </video>
-        </div>
 
         <div id="popup" class="">
 
@@ -1700,7 +1119,7 @@
                   
                 <div>
 
-                  <div class="underline lighter ">
+                  <div class="popupSubtitle ">
                     <p class="">
                     SOCIAL CAMPAIGN
                    </p>
@@ -1794,7 +1213,7 @@
                   
                 <div>
 
-                  <div class="underline lighter ">
+                  <div class="popupSubtitle ">
                     <p class="">
                     MICA GRAD VISUAL IDENTITY PROJECT
                    </p>
@@ -1943,17 +1362,19 @@
           
         </div>
   
-        <div id="popFrame" class="popTrigger">
-          <img class="width100" src="67f96b905705c2aa3a5b.png">
+        <div class="popupFrame">
+          <img class="width100 imgPad" src="67f96b905705c2aa3a5b.png">
+          <div class="split" data-splitting>THE-JOHN-THE-JOHN-THE-JOHN-THE-JOHN-THE-JOHN-</div>
+
         </div>
 
       </div>
 
+    </div>
+    </div>
       
+
+
       
-      <!-- <script type="module" src="./index.js"></script> -->
-      <!-- <script src="../node_modules/three/build/three.module.js"></script> -->
-      <!-- <script src="../node_modules/three/src/loaders/ObjectLoader.js"></script> -->
-      <!-- <script type="module" src="./model.js"></script> -->
   </body>
 </html>
